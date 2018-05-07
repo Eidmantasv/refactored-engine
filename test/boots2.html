@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#paimam").click(function(){
+                var a = document.getElementsById('vardas');
+                var b = document.getElementsById('pavarde');
+                var c = document.getElementsById('gender');
+                var d = document.getElementsById('gender2');
+                var e = document.getElementsById('patiekalas');
+                $("ol:last-child").after("a, b, c, d, e");
+            });
+        });
+    </script>
+</head>
+<body>
+    <form>
+        <br>
+        Vardas:&nbsp;
+        <input type="text" id="vardas" name="vardas" placeholder="Jūsų vardas..">
+        <br>
+        Pavardė:&nbsp;
+        <input type="text" id="pavarde" name="pavarde" placeholder="Jūsų pavardė..">
+        <br>
+        Lytis:&nbsp
+        <input type="radio" id="gender" name="gender" value="vyras" checked> Vyras<br>
+        <input type="radio" id="gender2" name="gender" value="moteris"> Moteris<br>
+        <br>
+        Patiekalas:&nbsp;
+        <input type="text" name="patiekalas">
+        <br><br>
+        <input type="submit" onclick="afterText()" id="paimam" value="Patvirtinti užsakymą">
+    </form>
+
+    <ol>
+        <li>Juozas Basas, Vyras, šašlykai</li>
+        <li>Onutė anastasevičiūtė, Moteris, salotos</li>
+    </ol>
+</body>
+</html>
