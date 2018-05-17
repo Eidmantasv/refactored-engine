@@ -1,5 +1,5 @@
 <?php
-
+/*
 function plytos($ilgis, $plotis, $gylis, $tarpai, $plt1, $plt2)
 {
     $basplotas = ($ilgis * $plotis)  + $gylis * $ilgis * 2 + $gylis * $plotis * 2;
@@ -9,3 +9,4 @@ function plytos($ilgis, $plotis, $gylis, $tarpai, $plt1, $plt2)
 }
 
 plytos (14, 6, 3, 0.004, 0.12,0.12);
+*/

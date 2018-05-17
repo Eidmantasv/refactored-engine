@@ -1,0 +1,18 @@
+{
+    "require": {
+        "php": "^5.6 || ^7.0"
+    },
+    "authors": [
+        {
+            "name": "Eidmantas",
+            "email": "eidmantas.v@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Shop\\": "src/",
+          "Config\\": "config/"
+        }
+    }
+}
